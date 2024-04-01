@@ -1,5 +1,8 @@
 import React, { useState, useReducer } from "react";
 
+//state refers to the second parameter of useReducer().. we can access like state.key state.count
+//action receive the value from dispatch,can access like action.payload
+
 const firstReducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.PLUS:
